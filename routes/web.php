@@ -11,10 +11,11 @@
 |
 */
 
+use App\Http\Livewire\Test;
+use Wave\Support\Facades\Wave;
+use TCG\Voyager\Facades\Voyager;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
-use TCG\Voyager\Facades\Voyager;
-use Wave\Support\Facades\Wave;
 
 // Authentication routes
 Auth::routes();
@@ -26,3 +27,6 @@ Route::group(['prefix' => 'admin'], function () {
 
 // Wave routes
 Wave::routes();
+
+
+Route::get('/test', Test::class);
