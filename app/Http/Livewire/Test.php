@@ -8,6 +8,6 @@ class Test extends Component
 {
     public function render()
     {
-        return view('livewire.test');
+        return view('livewire.test')->extends('themes.tailwind.layouts.app');
     }
 }

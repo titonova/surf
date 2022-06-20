@@ -178,7 +178,7 @@ window.popToast = function(type, message){
     // After 4 seconds hide the toast
     setTimeout(function(){
         Alpine.store('toast').update({ type, message, show: false });
-        
+
         setTimeout(function(){
             document.getElementById('toast_bar').classList.remove('w-0');
             document.getElementById('toast_bar').classList.add('w-full');
@@ -242,3 +242,4 @@ window.switchPlans = function (plan_id, plan_name) {
 };
 
 /********** Switch Plans Button Click ***********/
+

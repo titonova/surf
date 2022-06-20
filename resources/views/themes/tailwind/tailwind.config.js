@@ -5,6 +5,10 @@ module.exports = {
         './assets/**/*.scss',
         './assets/**/*.js',
     ],
+
+    presets: [
+        require('../../../../vendor/wireui/wireui/tailwind.config.js')
+    ],
     theme: {
         extend: {
             rotate: {

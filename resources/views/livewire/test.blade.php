@@ -9,4 +9,6 @@
         }"
     />
 </div>
+
+<x-input label="Name" placeholder="your name" />
 </div>
